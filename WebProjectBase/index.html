@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Aprenentatge per Projectes</title>
+    <meta charset="UTF-8" />
+    <meta name="title" content="Portal del Modul 3" />
+    <meta name="description" content="Proves d'aprenentatge" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header class="title">
+      <h2>PHP: Aprenentatge per Projectes</h2>
+    </header>
+
+    <main class="app-container">
+      <aside id="leftside">
+        <div class="darkstyle">
+          <h4>Referencies utils</h4>
+          <nav>
+            <a href="https://www.php.net/manual/es/" class="optmenu">PHP.NET</a>
+            <a href="https://www.w3schools.com/php/default.asp" class="optmenu"
+              >W3CSCHOOLS</a
+            >
+          </nav>
+        </div>
+      </aside>
+
+      <section id="central">
+        <h3>Accés al contingut</h3>
+        <article>
+          <p>Per accedir al contingut has d'estar autenticat.</p>
+          <form action="controllers/AutenticationController.php" method="POST">
+            <p>Entra nom i contrassenya si ja tens un usuari registrat</p>
+
+            <label for="user">USUARI</label>
+            <input type="text" id="user" name="user" required />
+
+            <label for="passwd">PASSWORD</label>
+            <input type="password" id="passwd" name="passwd" required />
+
+            <div style="text-align: right">
+              <input type="submit" value="ACCEDIR" name="enviar" />
+            </div>
+          </form>
+        </article>
+      </section>
+
+      <aside id="rightside">
+        <div class="darkstyle">
+          <p>
+            <b
+              >Aquest projecte treballa els Fonaments de Programació prenent com
+              a base el Llenguatge PHP.</b
+            >
+          </p>
+          <br />
+          <p>
+            Decisions d'arquitectura orientades a l'aprenentatge de Classes,
+            cookies i variables de sessió.
+          </p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div class="darkstyle">
+        <p>Autor: Luis Cañas Corvillo</p>
+      </div>
+    </footer>
+  </body>
+</html>

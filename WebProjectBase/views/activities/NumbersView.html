@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Aprenentatge per Projectes</title>
+        <meta charset="UTF-8">
+        <meta name="title" content="PortalWeb">
+        <link href="../../css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <header class="title">
+            <h2>Aprenentatge per Projectes</h2>
+            <section id="menu">
+                <nav>
+                    <a href="../main.php" class="optmenu">HOME</a>
+                    <a href="StringsView.html" class="optmenu">STRINGS</a>
+                    <a href="ArrayAssocView.html" class="optmenu">ARRAYS_ASSOC</a>
+                </nav>
+            </section>
+        </header>
+
+        <main class="app-container">
+            <aside id="leftside">
+                <div class="darkstyle">
+                    <h4>Navegació</h4>
+                    <nav>
+                        <br><br><br>
+                    </nav>
+                </div>
+            </aside>
+
+            <section id="central">
+                <h3>ACTIVITATS MATEMATIQUES</h3>
+                
+                <article>
+                    <h4>Comprovar Primer</h4>
+                    <form action="../../controllers/activities/PrimeController.php" method="POST">
+                        <p>Entra el numero que desees comprobar</p>
+                        <label for="num">Valor:</label>
+                        <input type="number" id="num" name="num" required/>
+                        
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-top: 0.5rem;">
+                            <input type="checkbox" id="showdivisors" name="showdivisors" style="width: auto;"/>
+                            <label for="showdivisors" style="margin: 0;">Mostrar la lista de divisores</label>
+                        </div>
+                        
+                        <input type="submit" value="COMPROBAR" name="enviar" />
+                    </form>
+                </article>
+
+                <article>
+                    <h4>Operacions Bàsiques</h4>
+                    <form action="../../controllers/activities/BasicsController.php" method="POST">
+                        <p>Entra los numeros con los que desees operar:</p>
+                        
+                        <label for="num1">Valor 1:</label>
+                        <input type="number" id="num1" name="num1" placeholder="entra un numero" required/>
+                        
+                        <label for="num2">Valor 2:</label>
+                        <input type="number" id="num2" name="num2" placeholder="entra un numero" required/>
+                        
+                        <label for="oper">Operació:</label>
+                        <input list="operations" id="oper" name="oper" placeholder="elige una operacion" required/>
+                        <datalist id="operations">
+                            <option label="SUMA" value="+"></option>
+                            <option label="RESTA" value="-"></option>
+                            <option label="MULTIPLICACION" value="*"></option>
+                            <option label="DIVISION" value="/"></option>
+                        </datalist>    
+                        
+                        <input type="submit" value="COMPROBAR" name="enviar" />
+                    </form>
+                </article>
+
+                <article>
+                    <h4>Divisors</h4>
+                    <form action="../../controllers/activities/DivisorsController.php" method="POST">
+                        <p>Entra un valor numèric i et presentaré els seus divisors:</p>
+                        <label for="div-val">VALOR:</label>
+                        <input type="number" id="div-val" name="value" required/>
+                        <input type="submit" value="COMPROVAR" name="enviar" />
+                    </form>             
+                </article>
+
+                <article>
+                    <h4>Sèrie Fibonacci</h4>
+                    <form action="../../controllers/activities/FiboController.php" method="POST">
+                        <p>Entra un valor numèric i et presentaré la seva serie fibonacci:</p>
+                        <label for="fibo-val">VALOR:</label>
+                        <input type="number" id="fibo-val" name="value" required/>
+                        <input type="submit" value="COMPROVAR" name="enviar" />
+                    </form>             
+                </article>
+
+                <article>
+                    <h4>Màxim Comú Divisor</h4>
+                    <form action="../../controllers/activities/McdController.php" method="POST">
+                        <p>Entra dos valors numèrics i et presentaré el MCD:</p>
+                        <label for="mcd-1">VALOR 1:</label>
+                        <input type="number" id="mcd-1" name="value" required/>
+                        <label for="mcd-2">VALOR 2:</label>
+                        <input type="number" id="mcd-2" name="value2" required/>
+                        <input type="submit" value="COMPROVAR" name="enviar" />
+                    </form>             
+                </article>
+
+                <article>
+                    <h4>Mínim Comú Multiple</h4>
+                    <form action="../../controllers/activities/McmController.php" method="POST">
+                        <p>Entra dos valors numèrics i et presentaré el MCM:</p>
+                        <label for="mcm-1">VALOR 1:</label>
+                        <input type="number" id="mcm-1" name="value" required/>
+                        <label for="mcm-2">VALOR 2:</label>
+                        <input type="number" id="mcm-2" name="value2" required/>
+                        <input type="submit" value="COMPROVAR" name="enviar" />
+                    </form>             
+                </article>
+
+                <article>
+                    <h4>Nombre Perfecte</h4>
+                    <form action="../../controllers/activities/PerfectController.php" method="POST">
+                        <p>Entra un valor numèric i et diré si es perfecte o no:</p>
+                        <label for="perf-val">VALOR:</label>
+                        <input type="number" id="perf-val" name="value" required/>
+                        <input type="submit" value="COMPROVAR" name="enviar" />
+                    </form>             
+                </article>
+
+            </section>
+
+            <aside id="rightside">
+                <div class="darkstyle">
+                    <h4>Referencies utils</h4>
+                    <nav>
+                        <a href="https://www.php.net/manual/es/" class="optmenu">PHP.NET</a>  
+                        <a href="https://www.w3schools.com/php/default.asp" class="optmenu">W3CSCHOOLS</a> 
+                    </nav>
+                </div>
+            </aside>
+        </main>
+
+        <footer>
+            <div class="darkstyle">  
+                <p>Autor: Jose Meseguer</p> 
+            </div>		
+        </footer>
+    </body>
+</html>

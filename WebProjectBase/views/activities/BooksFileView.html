@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Librería - Aprenentatge per Projectes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../../css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header class="title">
+            <h2>Aprenentatge per Projectes</h2>
+            <section id="menu">
+                <nav>
+                    <a href="../main.php" class="optmenu">HOME</a>
+                    <a href="NumbersView.html" class="optmenu">NUMBERS</a>
+                    <a href="StringsView.html" class="optmenu">STRINGS</a>
+                    <a href="ArrayAssocView.html" class="optmenu">ARRAYS_ASSOC</a>
+                </nav>
+            </section>
+        </header>
+
+        <main class="app-container">
+            <aside id="leftside">
+                <div class="darkstyle">
+                    <h4>Gestió de Llibres</h4>
+                    <nav>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">
+                            Filtra el nostre catàleg per diversos criteris utilitzant els formularies de la dreta.
+                        </p>
+                    </nav>
+                </div>
+            </aside>
+
+            <section id="central">
+                <h3>ACTIVITATS DE LIBRERIA</h3>
+                
+                <article>
+                    <h4>Filtrar per Any</h4>
+                    <form action="../../controllers/activities/LibreriaController.php" method="POST">
+                        <label for="año">Introduce el Año:</label>
+                        <input type="number" id="año" name="año" placeholder="ej. 2023" required/>
+                        <input type="submit" value="COMPROVAR"/>
+                    </form>
+                </article>
+
+                <article>
+                    <h4>Filtrar per Preu</h4>
+                    <form action="../../controllers/activities/LibreriaController.php" method="POST">
+                        <label for="price">Introduce el precio:</label>
+                        <input type="text" id="price" name="price" placeholder="ej. 19.99" required/>
+                        <input type="submit" value="COMPROVAR"/>
+                    </form>
+                </article>
+
+                <article>
+                    <h4>Filtrar per Autor</h4>
+                    <form action="../../controllers/activities/LibreriaController.php" method="POST">
+                        <label for="author">Introduce el nombre del autor:</label>
+                        <input type="text" id="author" name="author" placeholder="Nombre completo" required/>
+                        <input type="submit" value="COMPROVAR"/>
+                    </form>
+                </article>
+
+                <article>
+                    <h4>Informació del Autor</h4>
+                    <form action="../../controllers/activities/LibreriaController.php" method="POST">
+                        <label for="infoaut">Todas las dades del autor:</label>
+                        <input type="text" id="infoaut" name="infoaut" placeholder="Nombre del autor" required/>
+                        <input type="submit" value="COMPROVAR"/>
+                    </form>
+                </article>
+
+                <article>
+                    <h4>Llibres entre dos Anys</h4>
+                    <form action="../../controllers/activities/LibreriaController.php" method="POST">
+                        <label for="mayor">Año mayor:</label>
+                        <input type="number" id="mayor" name="mayor" placeholder="ej. 2020" required/>
+                        <label for="menor" style="margin-top: 0.5rem;">Año menor:</label>
+                        <input type="number" id="menor" name="menor" placeholder="ej. 2010" required/>
+                        <input type="submit" value="COMPROVAR"/>
+                    </form>
+                </article>
+
+                <article>
+                    <h4>Llibres entre Tema i Any</h4>
+                    <form action="../../controllers/activities/LibreriaController.php" method="POST">
+                        <label for="tema2">Nombre del tema:</label>
+                        <input type="text" id="tema2" name="tema2" placeholder="ej. Ficció" required/>
+                        <label for="year" style="margin-top: 0.5rem;">Año:</label>
+                        <input type="number" id="year" name="year" placeholder="ej. 2022" required/>
+                        <input type="submit" value="COMPROVAR"/>
+                    </form>
+                </article>
+
+                <article>
+                    <h4>Llibres entre Tema i Preu</h4>
+                    <form action="../../controllers/activities/LibreriaController.php" method="POST">
+                        <label for="tema3">Nombre del tema:</label>
+                        <input type="text" id="tema3" name="tema3" placeholder="ej. Historia" required/>
+                        <label for="preu" style="margin-top: 0.5rem;">Precio:</label>
+                        <input type="text" id="preu" name="preu" placeholder="ej. 25.50" required/>
+                        <input type="submit" value="COMPROVAR"/>
+                    </form>
+                </article>
+                
+                  <article>
+                    <h4>Per Temas</h4>
+                    <form action="../../controllers/activities/LibreriaController.php" method="POST">
+                        <label for="tema4">Nombre del tema:</label>
+                        <input type="text" id="tema4" name="tema4" placeholder="ej. Historia" required/>
+                        <input type="submit" value="COMPROVAR"/>
+                    </form>
+                </article>
+
+                <article>
+                    <h4>Informació dels Llibres per l'Any</h4>
+                    <form action="../../controllers/activities/LibreriaController.php" method="POST">
+                        <label for="year3">Información detallada por año:</label>
+                        <input type="number" id="year3" name="year3" placeholder="ej. 2021" required/>
+                        <input type="submit" value="COMPROVAR"/>
+                    </form>
+                </article>
+            </section>
+
+            <aside id="rightside">
+                <div class="darkstyle">
+                    <h4>Referències utils</h4>
+                    <nav>
+                        <a href="https://www.php.net/manual/es/" class="optmenu">PHP.NET</a>  
+                        <a href="https://www.w3schools.com/php/default.asp" class="optmenu">W3CSCHOOLS</a> 
+                    </nav>
+                </div>
+            </aside>
+        </main>
+
+        <footer>
+            <div class="darkstyle">  
+                <p>Autor: Luis Cañas</p> 
+            </div>		
+        </footer>
+    </body>
+</html>

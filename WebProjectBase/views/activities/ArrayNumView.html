@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Aprenentatge per Projectes</title>
+        <meta charset="UTF-8">
+        <meta name="title" content="PortalWeb">
+        <link href="../../css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <header  class="title">
+            <h2> Aprenentatge per Projectes </h2>
+            <section id="menu">
+                <nav  class="darkstyle">
+                    <div>
+                        <a href="../main.php" class="optmenu"> HOME </a>
+                        <a href="StringsView.html" class="optmenu"> STRINGS </a>
+                        <a href="ArrayAssocView.html" class="optmenu"> ARRAYS_ASSOC </a>
+                    </div>
+                </nav>
+            </section>
+        </header>
+        <section id="central">
+            <a name="principal"></a>
+            <h4>GESTIÓ ARRAY NUMERICS</h4>
+            <article>
+                <div id="formulario">  
+                    <form action="../../controllers/activities/ArrayNumController.php" method="POST">
+                        <h3>Dades per generar l'Array:</h3>
+
+                        <label>Valor mínim:</label><br>
+                        <input type="number" name="num1" placeholder="introdueix el valor mínim"/><br><br>
+
+                        <label>Valor màxim:</label><br>
+                        <input type="number" name="num2" placeholder="introdueix el valor màxim"/><br><br>
+
+                        <label>Mida del array:</label><br>
+                        <input type="number" name="long" placeholder="introdueix la mida del array"/><br><br>
+
+                        <label>Mostrar Anàlisi Estadístic:</label>
+                        <input type="checkbox" name="check" value="1"/><br><br>
+
+                        <label>Tipus d'ordenació:</label><br>
+                        <select name="orden">
+                            <option value="not">...</option>
+                            <option value="asc">Ascendente</option>
+                            <option value="desc">Descendente</option>
+                        </select><br><br>
+
+                        <h3>Búsqueda en el array:</h3>
+
+                        <label>Valor a buscar:</label><br>  
+                        <input type="number" name="num" placeholder="valor a trobar"/><br><br>
+
+                        <label>Primera posición de un valor:</label>
+                        <input type="checkbox" name="primeraPos" value="1"/><br><br>
+
+                        <label>Todas las posiciones de un valor:</label>
+                        <input type="checkbox" name="todasPos" value="1"/><br><br>
+
+                        <input type="submit" value="SHOW" name="enviar" />
+                    </form>
+                </div>
+            </article>
+
+
+        </section>
+        <footer>
+            <div class="darkstyle">  
+                <a><b> Autor: Luis Cañas</b> </a>
+            </div>
+        </footer>
+    </body>
+</html>

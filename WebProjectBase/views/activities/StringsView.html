@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Aprenentatge per Projectes</title>
+        <meta charset="UTF-8">
+        <meta name="title" content="PortalWeb">
+        <link href="../../css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header  class="title">
+            <h2> Aprenentatge per Projectes </h2>
+            <section id="menu">
+                <nav  class="darkstyle">
+                    <div>
+                        <a href="../main.php" class="optmenu"> HOME </a>
+                        <a href="NumbersView.html" class="optmenu"> NUMBERS & ARRAYS </a>
+                        <a href="ArrayAssocView.html" class="optmenu"> ARRAYS_ASSOC </a>
+                    </div>	
+                </nav>
+            </section>
+        </header>
+
+        <aside id="leftside">
+            <div class="darkstyle">
+                <nav>
+                    <br><br><br><br><br><br>
+                </nav>
+            </div>
+        </aside>
+
+        <aside id="rightside">
+            <div class="darkstyle">
+                <h4>Referencies utils:</h4>
+                <br>
+                <a href="https://www.php.net/manual/es/" class="optmenu"><i>PHP.NET</i></a>  
+                <br><br>
+                <a href="https://www.w3schools.com/php/default.asp" class="optmenu"><i>W3CSCHOOLS</i></a> 
+            </div>
+        </aside>
+
+        <section id="central">
+            <a name="principal"></a>
+            <h4>TREBALL AMB STRINGS</h4>
+
+            <article>
+                <b>CONTAR LES VOCALS DE LA FRASE</b>
+                <div id="formulario">             
+                    <form action="../../controllers/activities/FirstStringController.php" method="POST">
+                        <label>Text a processar: </label><br><br>
+                        <input name="texto"/>
+                        <input type="submit" value="COMPROVAR" id="enviar"/>
+                    </form>
+                </div>
+            </article>
+
+            <article>
+                <b>XIFRAT ESTATIC DE LES VOCALS DE LA FRASE</b>
+                <div id="formulario">             
+                    <form action="../../controllers/activities/SecondStringController.php" method="POST">
+                        <label>Text a processar: </label><br><br>
+                        <input name="texto"/>
+                        <input type="submit" value="XIFRAR" id="enviar"/>
+                    </form>
+                </div>
+            </article>	
+
+            <article>
+                <b>DISTANCIA ENTRE 2 CARACTERS</b>
+                <div id="formulario">             
+                    <form action="../../controllers/activities/ThirdStringController.php" method="POST">
+                        <label>Text a processar: </label>
+                        <input name="cadena"/>
+                        <label>CARACTER1:</label><input name="car1"/>
+                        <label>CARACTER2:</label><input name="car2"/>
+                        <input type="submit" value="COMPROVAR" id="enviar"/>
+                    </form>
+                </div>
+            </article>	
+
+            <article>
+                <b>LIMPIADOR DE CADENA</b>
+                <div id="formulario">             
+                    <form action="../../controllers/activities/FourthStringController.php" method="POST">
+                        <label>Cadena a Limpiar</label>
+                        <input name="cadena"/>
+                        <input type="submit" value="LIMPIAR" id="enviar"/>
+                    </form>
+                </div>
+            </article>
+            <article>
+                <b>CIFRAR CADENA</b>
+                <div id="formulario">             
+                    <form action="../../controllers/activities/FifthStringController.php" method="POST">
+                        <label>Cadena a Cifrar</label>
+                        <input name="cifrar"/>
+                        <input type="submit" value="CIFRAR" id="enviar"/>
+                    </form>
+                </div>
+            </article>
+            <article>
+                <b>DESCIFRAR CADENA</b>
+                <div id="formulario">             
+                    <form action="../../controllers/activities/SixthStringController.php" method="POST">
+                        <label>Cadena a Descifrar</label>
+                        <input name="descifrar"/>
+                        <input type="submit" value="DESCIFRAR" id="enviar"/>
+                    </form>
+                </div>
+            </article>
+            <article>
+                <div id="formulario">  
+                    <form action="../../controllers/controls/Control_Tema2_Controller.php" method="POST">
+                        <h3>Valors per l'Array:</h3>
+
+                        <label>Mida del array:</label><br>
+                        <input type="number" name="long" placeholder="mida de l'array"/><br><br>
+
+                        <label>Valor mínim:</label><br>
+                        <input type="number" name="num1" placeholder="entra valor mínim"/><br><br>
+
+                        <label>Valor màxim:</label><br>
+                        <input type="number" name="num2" placeholder="entra valor màxim"/><br><br>
+
+                        <h3>Entra una frase i extreu las consonants</h3>
+                        <input type="text" name="frase" placeholder="Introdueix una frase"/><br><br>
+
+                        <label>Elimina consonants duplicades</label><br>  
+                        <input type="checkbox" name="delete"/><br><br>
+                        <input type="submit" value="ENVIA" name="enviar"/>
+                    </form>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <div class="darkstyle">  
+                <a><b> Autor: Luis Cañas</b> </a> 
+            </div>		
+        </footer>
+    </body>
+</html>
